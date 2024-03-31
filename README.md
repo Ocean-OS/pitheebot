@@ -16,7 +16,7 @@ To initiate your bot, you will need to login. Here's how:
 <ol>
 <li>Login to the Pithee account you want the bot to use, in your browser. This is only confirmed to work if your account is Discord-based. (Twitch login has not been tested yet)</li>
 <li>Open Devtools and go to the Network tab.</li>
-<li>Send a message in Pithee. You will see two POST requests pop up, both named "insert_post". Click the second request.</li>
+<li>Send a message in Pithee. You will see one or two POST requests pop up, both named "insert_post". Click the second request, if there are two.</li>
 <li>In the Headers section of the request, you will scroll down until you see a parameter titled Apikey. Copy its contents.</li>
 <li>Scrolling down a bit further, you will find a parameter titled Authorization. Copy its contents.</li>
 <li>In your program, you will enter the script <code>pitheebot.login("your Apikey here","your Authorization here");</code></li>
