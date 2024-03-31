@@ -46,10 +46,10 @@ What I know about the API
 <li>If you attempt to use the API with valid authorizations and keys, it returns an empty page and a 204 HTTP code.</li>
 <li>The authorization appears to be three parts, split by periods. The first two parts are Base64 encoded JSON. The second part is account information, such as the user email, username, profile picture. The first part in the authorization key matches the first part in the API key, which has a similar format. The second part in the API key lists some information about when the token was made.</li>
 <li>The API sets the character limit on messages, so you cannot go over the character limit using the API.</li>
+<li>The authorization and keys expire after one hour. I will look into possibly altering the token's expiration date to see if the API accepts them.</li>
 </ul>
 What I don't know about the API
 <ul>
 <li>What sort of rate limiting is set</li>
 <li>If your authorization/key expires when you logout</li>
-<li>If the authorization/keys expires after a certain amount of time</li>
 </ul>
